@@ -1,0 +1,711 @@
+/*==========================================================
+  SEGOE UI
+*===========================================================
+*
+* Apenas mapear a fonte correta para cada peso e estilo
+**/
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 200;
+  src: local("Segoe UI Light");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 300;
+  src: local("Segoe UI Semilight");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  src: local("Segoe UI");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 500;
+  src: local("Segoe UI Semibold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  src: local("Segoe UI Bold");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Segoe UI Italic");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Segoe UI Bold Italic");
+}
+/*==========================================================
+  FONT ICONS
+*==========================================================*/
+@font-face {
+  font-family: 'Brasil-UF';
+  src: url('../fonts/brasil_uf/Brasil-UF.woff2?zbqm8c') format('woff2'), url('../fonts/brasil_uf/Brasil-UF.ttf?zbqm8c') format('truetype'), url('../fonts/brasil_uf/Brasil-UF.woff?zbqm8c') format('woff'), url('../fonts/brasil_uf/Brasil-UF.svg?zbqm8c#Brasil-UF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="br-"],
+[class*=" br-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Brasil-UF' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.br-brasil:before {
+  content: "\e900";
+}
+.br-uf-ac:before {
+  content: "\e901";
+}
+.br-uf-al:before {
+  content: "\e902";
+}
+.br-uf-am:before {
+  content: "\e903";
+}
+.br-uf-ap:before {
+  content: "\e904";
+}
+.br-uf-ba:before {
+  content: "\e905";
+}
+.br-uf-ce:before {
+  content: "\e906";
+}
+.br-uf-df:before {
+  content: "\e907";
+}
+.br-uf-es:before {
+  content: "\e908";
+}
+.br-uf-go:before {
+  content: "\e909";
+}
+.br-uf-ma:before {
+  content: "\e90a";
+}
+.br-uf-mg:before {
+  content: "\e90b";
+}
+.br-uf-ms:before {
+  content: "\e90c";
+}
+.br-uf-mt:before {
+  content: "\e90d";
+}
+.br-uf-pa:before {
+  content: "\e90e";
+}
+.br-uf-pb:before {
+  content: "\e90f";
+}
+.br-uf-pe:before {
+  content: "\e910";
+}
+.br-uf-pi:before {
+  content: "\e911";
+}
+.br-uf-pr:before {
+  content: "\e912";
+}
+.br-uf-rj:before {
+  content: "\e913";
+}
+.br-uf-rn:before {
+  content: "\e914";
+}
+.br-uf-ro:before {
+  content: "\e915";
+}
+.br-uf-rr:before {
+  content: "\e916";
+}
+.br-uf-rs:before {
+  content: "\e917";
+}
+.br-uf-sc:before {
+  content: "\e918";
+}
+.br-uf-se:before {
+  content: "\e919";
+}
+.br-uf-sp:before {
+  content: "\e91a";
+}
+.br-uf-to:before {
+  content: "\e91b";
+}
+@font-face {
+  font-family: 'Vue Awesome';
+  src: url('../fonts/vue_awesome/Vue-Awesome.woff2?jsu3w2') format('woff2'), url('../fonts/vue_awesome/Vue-Awesome.ttf?jsu3w2') format('truetype'), url('../fonts/vue_awesome/Vue-Awesome.woff?jsu3w2') format('woff'), url('../fonts/vue_awesome/Vue-Awesome.svg?jsu3w2#Vue-Awesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="vue-"],
+[class*=" vue-"] {
+  font-family: 'Vue Awesome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.vue-accept:before {
+  content: "\e900";
+}
+.vue-activity:before {
+  content: "\e901";
+}
+.vue-airplane:before {
+  content: "\e902";
+}
+.vue-anchor:before {
+  content: "\e903";
+}
+.vue-arrow-down:before {
+  content: "\e904";
+}
+.vue-arrow-left:before {
+  content: "\e905";
+}
+.vue-arrow-right:before {
+  content: "\e906";
+}
+.vue-arrow-up:before {
+  content: "\e907";
+}
+.vue-asterisk:before {
+  content: "\e908";
+}
+.vue-at:before {
+  content: "\e909";
+}
+.vue-award:before {
+  content: "\e90a";
+}
+.vue-bell:before {
+  content: "\e90b";
+}
+.vue-binocollars:before {
+  content: "\e90c";
+}
+.vue-bit-ghost:before {
+  content: "\e90d";
+}
+.vue-bit-pacman:before {
+  content: "\e90e";
+}
+.vue-book:before {
+  content: "\e90f";
+}
+.vue-bookmark:before {
+  content: "\e910";
+}
+.vue-bot:before {
+  content: "\e911";
+}
+.vue-box:before {
+  content: "\e912";
+}
+.vue-calendar:before {
+  content: "\e913";
+}
+.vue-camera:before {
+  content: "\e914";
+}
+.vue-cancel:before {
+  content: "\e915";
+}
+.vue-cart:before {
+  content: "\e916";
+}
+.vue-chart-bar:before {
+  content: "\e917";
+}
+.vue-checked:before {
+  content: "\e918";
+}
+.vue-chess-tower:before {
+  content: "\e919";
+}
+.vue-clip:before {
+  content: "\e91a";
+}
+.vue-clock:before {
+  content: "\e91b";
+}
+.vue-cloud:before {
+  content: "\e91c";
+}
+.vue-cloud-download:before {
+  content: "\e91d";
+}
+.vue-cloud-upload:before {
+  content: "\e91e";
+}
+.vue-coffee-cup:before {
+  content: "\e91f";
+}
+.vue-cog:before {
+  content: "\e920";
+}
+.vue-coins:before {
+  content: "\e921";
+}
+.vue-command:before {
+  content: "\e922";
+}
+.vue-comment:before {
+  content: "\e923";
+}
+.vue-connection:before {
+  content: "\e924";
+}
+.vue-copy:before {
+  content: "\e925";
+}
+.vue-cross:before {
+  content: "\e926";
+}
+.vue-dashboard:before {
+  content: "\e927";
+}
+.vue-database:before {
+  content: "\e928";
+}
+.vue-desk-lamp:before {
+  content: "\e929";
+}
+.vue-desktop:before {
+  content: "\e92a";
+}
+.vue-document:before {
+  content: "\e92b";
+}
+.vue-dollar:before {
+  content: "\e92c";
+}
+.vue-down:before {
+  content: "\e92d";
+}
+.vue-download:before {
+  content: "\e92e";
+}
+.vue-drink:before {
+  content: "\e92f";
+}
+.vue-droplet:before {
+  content: "\e930";
+}
+.vue-edit:before {
+  content: "\e931";
+}
+.vue-ellipsis:before {
+  content: "\e932";
+}
+.vue-emoti-angry:before {
+  content: "\e933";
+}
+.vue-emoti-baffled:before {
+  content: "\e934";
+}
+.vue-emoti-confused:before {
+  content: "\e935";
+}
+.vue-emoti-cool:before {
+  content: "\e936";
+}
+.vue-emoti-crying:before {
+  content: "\e937";
+}
+.vue-emoti-furious:before {
+  content: "\e938";
+}
+.vue-emoti-happy:before {
+  content: "\e939";
+}
+.vue-emoti-hipster:before {
+  content: "\e93a";
+}
+.vue-emoti-sad:before {
+  content: "\e93b";
+}
+.vue-emoti-shocked:before {
+  content: "\e93c";
+}
+.vue-emoti-sleepy:before {
+  content: "\e93d";
+}
+.vue-emoti-smile:before {
+  content: "\e93e";
+}
+.vue-emoti-thinking:before {
+  content: "\e93f";
+}
+.vue-emoti-tongue:before {
+  content: "\e940";
+}
+.vue-emoti-wink:before {
+  content: "\e941";
+}
+.vue-excel:before {
+  content: "\e942";
+}
+.vue-eye:before {
+  content: "\e943";
+}
+.vue-eyedropper:before {
+  content: "\e944";
+}
+.vue-facebook:before {
+  content: "\e945";
+}
+.vue-factory:before {
+  content: "\e946";
+}
+.vue-fast-forward:before {
+  content: "\e947";
+}
+.vue-feather:before {
+  content: "\e948";
+}
+.vue-female:before {
+  content: "\e949";
+}
+.vue-file:before {
+  content: "\e94a";
+}
+.vue-filter:before {
+  content: "\e94b";
+}
+.vue-flag:before {
+  content: "\e94c";
+}
+.vue-floppy-disk:before {
+  content: "\e94d";
+}
+.vue-folder:before {
+  content: "\e94e";
+}
+.vue-folder-zip:before {
+  content: "\e94f";
+}
+.vue-forklift:before {
+  content: "\e950";
+}
+.vue-fragile:before {
+  content: "\e951";
+}
+.vue-fruit:before {
+  content: "\e952";
+}
+.vue-gamepad:before {
+  content: "\e953";
+}
+.vue-gift:before {
+  content: "\e954";
+}
+.vue-globe:before {
+  content: "\e955";
+}
+.vue-graph:before {
+  content: "\e956";
+}
+.vue-grid:before {
+  content: "\e957";
+}
+.vue-hash:before {
+  content: "\e958";
+}
+.vue-headset:before {
+  content: "\e959";
+}
+.vue-heart:before {
+  content: "\e95a";
+}
+.vue-home:before {
+  content: "\e95b";
+}
+.vue-hourglass:before {
+  content: "\e95c";
+}
+.vue-id-card:before {
+  content: "\e95d";
+}
+.vue-image:before {
+  content: "\e95e";
+}
+.vue-info:before {
+  content: "\e95f";
+}
+.vue-instagram:before {
+  content: "\e960";
+}
+.vue-invoice:before {
+  content: "\e961";
+}
+.vue-key:before {
+  content: "\e962";
+}
+.vue-keyboard:before {
+  content: "\e963";
+}
+.vue-layers:before {
+  content: "\e964";
+}
+.vue-layout:before {
+  content: "\e965";
+}
+.vue-left:before {
+  content: "\e966";
+}
+.vue-lifebuoy:before {
+  content: "\e967";
+}
+.vue-lightning:before {
+  content: "\e968";
+}
+.vue-link:before {
+  content: "\e969";
+}
+.vue-location:before {
+  content: "\e96a";
+}
+.vue-logout:before {
+  content: "\e96b";
+}
+.vue-magnifier:before {
+  content: "\e96c";
+}
+.vue-mail:before {
+  content: "\e96d";
+}
+.vue-male:before {
+  content: "\e96e";
+}
+.vue-map:before {
+  content: "\e96f";
+}
+.vue-maximize:before {
+  content: "\e970";
+}
+.vue-megaphone:before {
+  content: "\e971";
+}
+.vue-menu:before {
+  content: "\e972";
+}
+.vue-microphone:before {
+  content: "\e973";
+}
+.vue-minimize:before {
+  content: "\e974";
+}
+.vue-minus:before {
+  content: "\e975";
+}
+.vue-monitor:before {
+  content: "\e976";
+}
+.vue-move:before {
+  content: "\e977";
+}
+.vue-movie:before {
+  content: "\e978";
+}
+.vue-museum:before {
+  content: "\e979";
+}
+.vue-music:before {
+  content: "\e97a";
+}
+.vue-mute:before {
+  content: "\e97b";
+}
+.vue-padlock-locked:before {
+  content: "\e97c";
+}
+.vue-padlock-unlocked:before {
+  content: "\e97d";
+}
+.vue-paint-roller:before {
+  content: "\e97e";
+}
+.vue-pause:before {
+  content: "\e97f";
+}
+.vue-pdf:before {
+  content: "\e980";
+}
+.vue-pencil:before {
+  content: "\e981";
+}
+.vue-percent:before {
+  content: "\e982";
+}
+.vue-phone:before {
+  content: "\e983";
+}
+.vue-pin:before {
+  content: "\e984";
+}
+.vue-play:before {
+  content: "\e985";
+}
+.vue-plus:before {
+  content: "\e986";
+}
+.vue-pointer:before {
+  content: "\e987";
+}
+.vue-power:before {
+  content: "\e988";
+}
+.vue-presentation:before {
+  content: "\e989";
+}
+.vue-printer:before {
+  content: "\e98a";
+}
+.vue-question:before {
+  content: "\e98b";
+}
+.vue-quote-close:before {
+  content: "\e98c";
+}
+.vue-quote-open:before {
+  content: "\e98d";
+}
+.vue-refresh:before {
+  content: "\e98e";
+}
+.vue-reload:before {
+  content: "\e98f";
+}
+.vue-reply:before {
+  content: "\e990";
+}
+.vue-rewind:before {
+  content: "\e991";
+}
+.vue-right:before {
+  content: "\e992";
+}
+.vue-scissors:before {
+  content: "\e993";
+}
+.vue-server:before {
+  content: "\e994";
+}
+.vue-share:before {
+  content: "\e995";
+}
+.vue-ship:before {
+  content: "\e996";
+}
+.vue-shuffle:before {
+  content: "\e997";
+}
+.vue-signal:before {
+  content: "\e998";
+}
+.vue-sitemap:before {
+  content: "\e999";
+}
+.vue-sliders:before {
+  content: "\e99a";
+}
+.vue-soundwave:before {
+  content: "\e99b";
+}
+.vue-spinner:before {
+  content: "\e99c";
+}
+.vue-star:before {
+  content: "\e99d";
+}
+.vue-stop:before {
+  content: "\e99e";
+}
+.vue-suitcase:before {
+  content: "\e99f";
+}
+.vue-support:before {
+  content: "\e9a0";
+}
+.vue-tag:before {
+  content: "\e9a1";
+}
+.vue-text:before {
+  content: "\e9a2";
+}
+.vue-thumbs-down:before {
+  content: "\e9a3";
+}
+.vue-thumbs-up:before {
+  content: "\e9a4";
+}
+.vue-tools:before {
+  content: "\e9a5";
+}
+.vue-trash:before {
+  content: "\e9a6";
+}
+.vue-trophy:before {
+  content: "\e9a7";
+}
+.vue-truck:before {
+  content: "\e9a8";
+}
+.vue-twitter:before {
+  content: "\e9a9";
+}
+.vue-umbrella:before {
+  content: "\e9aa";
+}
+.vue-untagged:before {
+  content: "\e9ab";
+}
+.vue-up:before {
+  content: "\e9ac";
+}
+.vue-upload:before {
+  content: "\e9ad";
+}
+.vue-user:before {
+  content: "\e9ae";
+}
+.vue-users:before {
+  content: "\e9af";
+}
+.vue-volume:before {
+  content: "\e9b0";
+}
+.vue-warning:before {
+  content: "\e9b1";
+}
+.vue-youtube:before {
+  content: "\e9b2";
+}
+.vue-zoom-in:before {
+  content: "\e9b3";
+}
+.vue-zoom-out:before {
+  content: "\e9b4";
+}

@@ -1,0 +1,509 @@
+
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "helpers";
+
+
+/* ==========================================================================
+    MAIN
+   ========================================================================== */
+
+html,body
+{
+	height:100vh;
+}
+
+body
+{
+	font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color:@font-color;
+	position:relative;
+	background:@bg-color;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+    font-family: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+section
+{
+    padding: 100px 0 50px;
+}
+
+.default-section .section-title
+{
+    margin-top: 50px;
+}
+
+.navbar
+{
+	background: @primary-color;
+	font-family: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	.drop-shadow(0, 3px, 6px);
+	font-weight:700;
+	position: fixed;
+	top:0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 60px;
+    padding: 25px 0;
+    margin-bottom: 20px;
+    &:before, &:after
+    {
+		content: " ";
+		display: table;
+    }
+	&:after
+	{
+		clear: both;
+	}
+
+	.navbar-header
+	{
+		float: left;
+		&:before, &:after
+		{
+	    	content: " ";
+	    	display: table;			
+		}
+		&:after
+		{
+			clear: both;
+		}
+	}
+
+    .navbar-brand
+    {
+		float: left;
+    	padding: 19.5px 15px;
+    }
+
+    .navbar-nav
+    {
+    	letter-spacing: 1px;
+    	float: right;
+    	padding-left: 0;
+    	list-style: none;
+    	margin: 0;
+    	> li
+    	{
+    		float: left;
+    		position: relative;
+    		display: block;
+    		.transition(background .3s);
+    		.border-radius();
+    		a 
+    		{
+				color: white;
+				.transition(color .3s);
+			    display: block;
+			    padding: 19.5px 15px;
+    			line-height: 21px;
+    			&:hover
+    			{
+					color: @accent-color-dark;
+    			}
+    		}
+    	}
+		.active
+    	{
+    		background: @primary-color-dark;
+    	}
+    }
+}
+
+footer
+{
+	color: white;
+	text-align:center;
+	.footer-info
+	{
+		padding-top:50px;
+		background: @accent-color;
+		.footer-social, .footer-about
+		{
+			width: 50%;
+			float: left;
+			margin-bottom: 50px;
+			position: relative;
+		    min-height: 1px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+		}
+		
+		.footer-social
+		{
+			h3
+			{
+				font-size: 24px;
+			}
+		}
+
+		.footer-about
+		{
+			font-size:24px;
+		}
+	}
+
+	.footer-copyright
+	{
+	    padding: 25px 0;
+	    font-size: 16px;
+	    background-color: @accent-color-dark;		
+	}
+}
+
+.section-title
+{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align:center;
+
+    h2
+    {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .section-title-icon
+    {
+        max-width: 300px;
+        margin: 10px auto 40px;
+        height: 35px;
+
+        hr
+        {
+            width: 39%;
+            height: 5px;
+            background: @font-color;
+            .border-radius(15px);
+            border: none;
+            float:left;
+            margin-top: 21px;
+            margin-bottom: 21px;
+        }
+
+        span
+        {
+            font-size: 35px;
+            margin: 5px 10px;
+            color: @font-color;
+            float:left;
+        }
+    }
+}
+
+.gastos-container
+{
+    color: @font-color;
+    font-size: 17px;
+    margin-bottom: 15px;
+    display: table;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float:left;
+    width:50%;
+
+    .obra-uf
+    {
+	    font-size: 100px;
+	    float: left;
+	    margin-right: 7px;
+	    .text-shadow(2px 1px 5px rgba(0, 0, 0, 0.9));
+    }
+
+    .obra-info
+    {
+	    float: left;
+	    width: 80%;
+	    margin-top: 10px;
+	    > *
+	    {
+	    	margin: 4px;
+	    }
+	    h4
+	    {
+	    	text-transform: initial;
+	    	.text-ellipsis(380px);
+	    }
+	    	    	
+    }
+
+    .obra-social-counter
+    {
+		font-size: 19px;
+    }
+}
+
+.brasil-map
+{
+	display:none;
+	svg
+	{
+	    max-width: 60%;
+	    margin: 0 auto;
+	    display: block;
+	    position:relative;
+		.drop-shadow-filter(0px, 0px, 6px, rgba(0, 0, 0, 0.7));
+
+		path
+		{
+		    fill: @alt-color;
+		    .transition(all .3s ease-in-out);
+		}
+
+		a {
+			position:relative;
+		}
+
+		.highlight-uf path
+		{
+			fill: darken(@alt-color, 15%);
+		}	
+	}
+
+	.tweet
+	{
+		position:absolute;
+	    width: 300px;
+		background:@tweet-bg;
+		.border-radius(7px);
+		border: 3px solid @tweet-bg-muted;
+		padding: 15px 10px 10px 15px;
+		.drop-shadow-filter(0, 2px, 8px, rgba(0, 0, 0, 0.3));
+		z-index:999;
+		visibility:hidden;
+		will-change: top, left;
+		.transition-n(left .3s ease-in-out, top .3s ease-in-out);
+		.tweet-user 
+		{
+			width:100%;
+			height:28px;
+			
+			*
+			{
+				float:left;
+			}
+
+			h4 
+			{
+				margin:0;
+				margin-left:4px;
+				line-height:28px;
+				.text-ellipsis(230px);			
+			}
+
+			span
+			{
+				font-size: 28px;
+				color:@twitter-color;
+				margin-right:3px;
+			}
+		}
+
+		&:after, &:before 
+		{
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&:after 
+		{
+			border-color: rgba(0, 0, 0, 0);
+			border-top-color: @tweet-bg;
+			border-width: 20px;
+			margin-left: -20px;			
+		}
+
+		&:before 
+		{
+			border-color: transparent;
+			border-top-color: @tweet-bg-muted;
+			border-width: 24px;
+			margin-left: -24px;
+		}
+	}	
+}
+
+/* ==========================================================================
+    HOME
+   ========================================================================== */
+
+header
+{
+	text-align: center;
+    background: @primary-color url(../img/header_bg.jpg) 0 -40px;
+    background-size: cover;
+    color: white;
+
+    .container
+    {
+	    padding-top: 200px;
+	    padding-bottom: 100px;
+    }
+
+    img
+    {
+		margin: 0 auto 20px;
+    }
+
+    p
+    {
+		font-size: 25px;
+	    font-weight: 300;
+	    .text-shadow(0 4px 3px rgba(0,0,0,0.8));
+    }
+
+    .state-search
+    {
+    	width:50%;
+		margin: 0 auto;
+
+    	.input-group
+    	{
+		    border: 3px solid white;
+		    .border-radius(7px);
+		    background: rgba(0, 0, 0, 0.2);
+    	}
+
+    	.input-group-icon
+    	{
+		    font-size: 30px;
+		    background: transparent;
+		    border: none;
+		    color: rgba(255, 255, 255, 0.9);
+		    padding: 0 12px;
+    	}
+
+    	.input-group-field
+    	{
+			font-size: 30px;
+			height: 66px;
+    		padding: 18px 27px;
+		    background: transparent;
+		    border: none;
+		    color: white;
+		    .text-shadow(2px 1px 5px rgba(0, 0, 0, 0.9));
+		    .placeholder(rgba(255, 255, 255, 0.85));
+    	}
+
+    	.btn-search
+    	{
+    		cursor:pointer;
+    	}
+    }
+}
+
+.gastos-section
+{
+    background: @bg-color url(../img/mais_vistas_bg.jpg);
+    background-size: cover;
+    display:none;
+}
+
+.gastos-model
+{
+	display:none;
+}
+
+.social-section
+{
+	background: #F7FFFF url("../img/social_media.jpg");
+	background-size: 1500px 1498px;
+}
+
+
+/* ==========================================================================
+    OBRA
+   ========================================================================== */
+
+.obra-filter
+{
+    margin: 15px auto;
+    display: table;
+    background: rgba(0,0,0,0.2);
+    padding: 15px 40px 15px 10px;
+    border-radius: 7px;
+    color: white;
+
+    .input-group-icon
+    {
+    	display: inline-block;
+    	margin: 0 10px;
+    }
+
+    .input-group-field
+    {
+  		color: darken(@bg-color,45%);
+  		.placeholder(darken(@bg-color,45%));
+
+    }
+
+    .btn
+    {
+		padding: 15px;
+		margin-left: 10px;
+    }
+}
+
+.obra-detail
+{
+	font-size: 19px;
+
+	ul
+	{
+	    padding: 0;	
+	}
+
+	li
+	{
+	    list-style-type: none;
+
+	    > span 
+	    {
+	        font-size: 27px;
+	    }
+	}
+}
+
+.progress-bar
+{
+	width: 100%;
+	height: 50px;
+	display:table; 
+	background:@mute-color; 
+	padding: 5px;
+
+	p
+	{
+		color: white;
+		text-align:center;
+		line-height:40px;
+		margin: 0;
+		font-size:16px;
+		font-family: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+	}
+
+}
+
+@import "responsive";
+
